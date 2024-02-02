@@ -17,6 +17,6 @@ app.use('/', router)
 app.use('/uploads',express.static(__dirname+'/uploads'))
 connectDB();
 
-const PORT = process.env.PORT|| 5001;
+const PORT = process.env.PORT|| 5000;
 
 app.listen(PORT, () => console.log(`server is running ${PORT}`))
